@@ -22,3 +22,5 @@ Credits:
 Subscribe to my YouTube channel at https://www.youtube.com/c/EpicBoomerMoments.
 Follow me on Instagram at https://www.instagram.com/epicboomermoments1/
 Follow me on Soundcloud as well, I make bangers, at least according to me. https://soundcloud.com/epic-boomer-moments
+
+![foxdemo](https://www.hospitalrecords.com/wp-content/uploads/2018/04/KOTRBW2LR-GJ-3.jpg)

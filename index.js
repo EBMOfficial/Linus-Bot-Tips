@@ -84,6 +84,7 @@ const linuspointseconomy = require('./commands/linuspointseconomy.js')
 const APProtect = require('./schemas/APProtect.js')
 const antiphisher = require('./commands/antiphisher.js')
 const settingLog = require('./schemas/settingLog.js')
+const seek = require('./music/seek.js')
 
 // END COMMAND DECLARATION LINES
 
@@ -195,6 +196,7 @@ linuspointseconomy(client)
 APProtect(client)
 antiphisher(client)
 settingLog(client)
+seek(client)
 
 
   // END COMMAND DEPLOYMENT LINES

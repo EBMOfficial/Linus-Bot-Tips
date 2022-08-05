@@ -15,8 +15,10 @@ Why should you get Linus Bot Tips?
 Because it's good, simple as.
 
 Credits:
-- EBMOfficial (EBMOfficial#0545 on Discord, contact me if the bot shits bricks)
+- @EBMOfficial (EBMOfficial#0545 on Discord, contact me if the bot shits bricks)
 - Mexasicalan (Mexasicalan#0547 on Discord, occasional contributor, full-time comic relief for whenever I wanted to drink blinker fluid.)
+- @ZerioDev for the music bot script (https://github.com/ZerioDev/Music-bot)
+- @nikolaischunk for the stop-discord-phishing package (https://github.com/nikolaischunk/stop-discord-phishing)
 - The makers of all of the brilliant packages that make many functions possible. Those packages can be found in package.json
 
 Subscribe to my YouTube channel at https://www.youtube.com/c/EpicBoomerMoments.

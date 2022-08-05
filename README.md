@@ -16,7 +16,7 @@ Because it's good, simple as.
 
 Credits:
 - EBMOfficial (EBMOfficial#0545 on Discord, contact me if the bot shits bricks)
-- Mexasiclan (Mexasicalan#0547 on Discord, occasional contributor, full-time comic relief for whenever I wanted to drink blinker fluid.)
+- Mexasicalan (Mexasicalan#0547 on Discord, occasional contributor, full-time comic relief for whenever I wanted to drink blinker fluid.)
 - The makers of all of the brilliant packages that make many functions possible. Those packages can be found in package.json
 
 Subscribe to my YouTube channel at https://www.youtube.com/c/EpicBoomerMoments.

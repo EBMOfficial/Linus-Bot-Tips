@@ -77,13 +77,13 @@ const musicskip = require('./music/skip.js')
 const musicstop = require('./music/stop.js')
 const musictime = require('./music/time.js')
 const musicvolume = require('./music/volume.js')
-const rolegiver = require('./commands/rolegiver.js')
 const trolling = require('./commands/trolling.js')
 const tts = require('./commands/tts.js')
 const linuspointseconomy = require('./commands/linuspointseconomy.js')
 const APProtect = require('./schemas/APProtect.js')
 const antiphisher = require('./commands/antiphisher.js')
 const settingLog = require('./schemas/settingLog.js')
+const progress = require('./music/progress.js')
 const seek = require('./music/seek.js')
 
 // END COMMAND DECLARATION LINES
@@ -109,24 +109,25 @@ player.on('queueEnd', (queue) => {
 });
 
  client.on('guildMemberAdd', async (member) => { 
- setInterval(() => {
-    let myGuild = member.guilds.cache.get("597676585058828300");
+    let myGuild = client.guilds.cache.get("597676585058828300");
 const memberCount = myGuild.memberCount
-let memberCountChannel = myGuild.channels.cache.get("847831545796231218");
+let memberCountChannel = client.channels.cache.get("847831545796231218");
     memberCountChannel.setName('Boomers: ' + memberCount);
-
-  }, 86400000);
- });
+});
  client.on('guildMemberRemove', async (member) => { 
- setInterval(() => {
-    let myGuild = member.guilds.cache.get("597676585058828300");
+    let myGuild = client.guilds.cache.get("597676585058828300");
 const memberCount = myGuild.memberCount
-let memberCountChannel = myGuild.channels.cache.get("847831545796231218");
+let memberCountChannel = client.channels.cache.get("847831545796231218");
     memberCountChannel.setName('Boomers: ' + memberCount);
-
-  }, 86400000);
  });
 client.on('ready', () => {
+   // Gonna go recite the Lord's Prayer and see if this works
+  //client.on("rateLimit", data => {
+   // process.kill(1)
+//})
+  const StatusChannel = client.channels.cache.get('1022969118183411782')
+  const currentDate = new Date();
+  StatusChannel.send(`Linus Bot Tips is online, the time of startup was ${currentDate.toLocaleString()} UTC.`)
 
   console.log("Connected as " + client.user.tag)
 
@@ -189,29 +190,22 @@ musicskip(client)
   musicstop(client)
   musictime(client)
 musicvolume(client)
- // rolegiver(client)
- trolling(client)
+// trolling(client)
 tts(client)
 linuspointseconomy(client)
 APProtect(client)
 antiphisher(client)
+// Inshallah we will fix this bug
 settingLog(client)
+progress(client)
 seek(client)
 
 
   // END COMMAND DEPLOYMENT LINES
   
-  
-  
-  
  
   
 
-
-
-  
-
-  
 
 client.on('message', async message => {
      if (!message.content.startsWith(prefix) || message.author.bot) return;
